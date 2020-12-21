@@ -3,5 +3,8 @@
     "express": {
       "port": 8100
     }
+  },
+  "app": {
+    "title": "Banno Plugin External Application"
   }
 }
