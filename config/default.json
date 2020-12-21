@@ -6,5 +6,17 @@
   },
   "app": {
     "title": "Banno Plugin External Application"
+  },
+  "banno": {
+    "baseUrl": "https://my.optimus-fi.com",
+    "tokenPath": "/a/consumer/api/oidc/token",
+    "plugins": {
+      "index": {
+        "client": {
+          "id": "6feb7a9e-cfe6-4ef4-89ca-3ae535a40af5",
+          "secret": "da97faf2-6b1e-4b2f-9c5d-52f9bc585891"
+        }
+      }
+    }
   }
 }
