@@ -9,7 +9,13 @@
   },
   "banno": {
     "baseUrl": "https://my.optimus-fi.com",
-    "tokenPath": "/a/consumer/api/oidc/token",
+    "api": {
+      "basePath": "/a/consumer/api",
+      "paths": {
+        "token": "/oidc/token",
+        "users": "/users"
+      }
+    },
     "plugins": {
       "index": {
         "client": {
