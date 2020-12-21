@@ -5,9 +5,10 @@ const banno = require('../lib/banno.lib');
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
-  const accessToken = banno.getDecodedToken();
+  const routeName = 'index';
+  const accessToken = banno.getDecodedToken(routeName);
   const title = (config.app.title) ? config.app.title : 'Express';
-  res.render('index', { title: title });
+  res.render(routeName, { title: title });
 });
 
 module.exports = router;
