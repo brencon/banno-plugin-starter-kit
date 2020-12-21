@@ -1,7 +1,8 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: azure;
+  padding-left: 15px;
+  padding-right: 15px;
+  font: 12px "roboto-web", "system-ui", "-apple-system", "BlinkMacSystemFont", "Roboto", "sans-serif";
+  background-color: white;
 }
 
 a {
