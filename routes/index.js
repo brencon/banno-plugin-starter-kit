@@ -8,9 +8,11 @@ const bannoApi = require('../lib/banno-api.lib');
 router.get('/', async function(req, res, next) {
   const routeName = 'index';
   const code = req.query.code;
+  // user
   const user = await bannoApi.getUser(routeName, code);
   const name = `${user.firstName} ${user.lastName}`;
   const city = `${user.address.city}`;
+  // render page
   const title = (config.app.title) ? config.app.title : 'Express';
   res.render(routeName, { 
     title: title,
