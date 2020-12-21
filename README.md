@@ -1,4 +1,4 @@
-# banno-plugin-starter-kit
+# Banno Plugin Starter Kit
 Banno Plugin external application template with Express running on Nodejs
 
 ## Summary
