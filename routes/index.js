@@ -8,10 +8,15 @@ const bannoApi = require('../lib/banno-api.lib');
 router.get('/', async function(req, res, next) {
   const routeName = 'index';
   const code = req.query.code;
-  //const accessToken = bannoAuth.getDecodedToken(routeName, code);
-  const user = bannoApi.getUser(routeName, code);
+  const user = await bannoApi.getUser(routeName, code);
+  const name = `${user.firstName} ${user.lastName}`;
+  const city = `${user.address.city}`;
   const title = (config.app.title) ? config.app.title : 'Express';
-  res.render(routeName, { title: title });
+  res.render(routeName, { 
+    title: title,
+    name: name,
+    city: city
+  });
 });
 
 module.exports = router;
